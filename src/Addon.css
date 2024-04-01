@@ -1,0 +1,37 @@
+.show {visibility: visible}
+.hide {visibility: hidden}
+
+.freeze-move-up-con {
+    top:4%;
+    height:auto;
+}
+.freeze-change-h {
+    height:auto;
+}
+.freeze-move-footer-down {
+    transform: translateY(116px);
+}
+
+.move-con-up {
+    animation-name: moveup;
+    animation-duration: 1s;
+}
+.move-footer-down {
+    animation-name: movefooterdown;
+    animation-duration: 1s;
+}
+.move-con-up-back {
+    animation-name: moveupback;
+    animation-duration: 1s;
+}
+
+
+@keyframes moveup {
+    to{top:4%}
+}
+@keyframes movefooterdown {
+    to{transform: translateY(116px)}
+}
+@keyframes moveupback {
+    to{transform: translateY(0px);}
+}
